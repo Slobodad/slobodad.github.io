@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ITSUBA</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="icons/Logo.png">
+    <!-- End favicon -->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5 col-md-6 col-sm-12 header__col-first">
+                    <h2 class="header__title">
+                        Improve kendo
+                    </h2>
+                    <div class="header__rectangle"></div>
+                    <p class="header__description">
+                        <span>Smart tsuba that allows you</span>
+                        <span>to track</span>
+                        <span>all your shinai movements</span>
+                    </p>
+                </div>
+                <div class="col-lg-5 col-md-10 col-sm-12 header__col-second">
+                    <h1 class="header__logo">
+                        itsuba
+                    </h1>
+                    <form action="" class="header__form">
+                        <input type="text" placeholder="full name" class="header__field">
+                        <input type="text" placeholder="email" class="header__field">
+                        <button type="submit" class="header__btn" id="js-btn">submit</button>
+                    </form>
+                    <h2 class="header__subtitle">
+                        enjoy kendo
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- About -->
+    <section class="about">
+        <div class="container about__container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3 class="about__title">
+                        itsuba
+                    </h3>
+                    <h5 class="about__subtitle">
+                        consists of
+                    </h5>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-md-6">
+                    <div class="row component__first-element">
+                        <div class="col-md-4 component__element">
+                            <div class="component__icon">
+                                <p>al</p>
+                                <p>
+                                    <span>3s</span><sup>2</sup>
+                                    <span>3p</span><sup>1</sup>
+                                </p>
+
+                            </div>
+                            <div class="component__description">
+                                <p>Aluminium body</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row component__box">
+                        <div class="col-md-7 component__list">
+                            <div class="component__element">
+                                <div class="component__icon">
+                                    <img src="img/board.png" alt="icon">
+                                </div>
+                                <div class="component__description">
+                                    <p>board</p>
+                                </div>
+                            </div>
+                            <div class="component__element">
+                                <div class="component__icon">
+                                    <img src="img/sensor.png" alt="icon">
+                                </div>
+                                <div class="component__description">
+                                    <p>Acceleration<br>sensor</p>
+                                </div>
+                            </div>
+                            <div class="component__element">
+                                <div class="component__icon">
+                                    <img src="img/gyroscope.png" alt="icon">
+                                </div>
+                                <div class="component__description">
+                                    <p>gyroscope</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 component__list">
+                            <div class="component__element">
+                                <div class="component__icon">
+                                    <img src="img/ssd.png" alt="icon">
+                                </div>
+                                <div class="component__description">
+                                    <p>ssd</p>
+                                </div>
+                            </div>
+                            <div class="component__element">
+                                <div class="component__icon">
+                                    <img src="img/battery.png" alt="icon">
+                                </div>
+                                <div class="component__description">
+                                    <p>battery</p>
+                                </div>
+                            </div>
+                            <div class="component__element">
+                                <div class="component__icon">
+                                    <img src="img/protectores.png" alt="icon">
+                                </div>
+                                <div class="component__description">
+                                    <p>Rubber protectors</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 about__img">
+                    <img src="img/tsuba.png" alt="product">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 col-md-12">
+                    <p class="component__text">
+                        Gyroscope and Acceleration sensors track all shinai movements in 3 dimensions.
+                        We store this data and analyze it with the help of machine learning algorithm that
+                        defines the type, speed and accuracy of each strike.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About -->
+    <!-- Tracking -->
+    <section class="tracking">
+        <div class="container tracking__container">
+            <div class="row justify-content-between">
+                <div class="col-lg-4 col-md-6 col-sm-12 tracking__box">
+                    <h5 class="tracking__subtitle">ALL what you need</h5>
+                    <h3 class="tracking__title">you can track</h3>
+                    <div class="tracking__list-first">
+                        <div class="tracking__element">
+                            <p>
+                                74
+                                <span class="small">m/s</span>
+                                <span>strike speed</span>
+                            </p>
+                        </div>
+                        <div class="tracking__element">
+                            <p>
+                                82
+                                <span class="large">%</span>
+                                <span>strike accuracy</span>
+                            </p>
+                        </div>
+                        <div class="tracking__element">
+                            <p>
+                                2428
+                                <span class="small">kkal</span>
+                                <span>calories burned</span>
+                            </p>
+                        </div>
+                        <div class="tracking__element tracking__element-tabletOn">
+                            <p>
+                                458
+                                <span class="small">total hits</span>
+                                <span>number of strikes</span>
+                            </p>
+                        </div>
+                        <div class="tracking__element tracking__element-tabletOn">
+                            <p class="average">
+                                men/
+                                <span>TSUKI</span>
+                                / do/
+                                <span>KOTE</span>
+                                <span>type of strikes </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 tracking__img">
+                    <img src="img/bogu_picture.jpg" alt="photo">
+                </div>
+                <div class="col-md-3 tabletOff">
+                    <div class="tracking__list-second">
+                        <div class="tracking__element">
+                            <p>
+                                458
+                                <span class="small">total hits</span>
+                                <span>number of strikes</span>
+                            </p>
+                        </div>
+                        <div class="tracking__element">
+                            <p class="average">
+                                men/
+                                <span>TSUKI</span>
+                                / do/
+                                <span>KOTE</span>
+                                <span>type of strikes </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Tracking -->
+    <!-- Instruction -->
+    <section class="instruction">
+        <div class="container instruction__container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5 col-md-6 col-sm-12 insrtuction__box">
+                    <h5 class="instruction__subtitle">How it works </h5>
+                    <h3 class="instruction__title">
+                        Share your data
+                        with your friends
+                    </h3>
+                    <ul class="insrtuction__list">
+                        <li class="instruction__element">
+                            <span>001</span>
+                            <p>
+                                Turn on your iTsuba
+                                before keiko
+                            </p>
+                        </li>
+                        <li class="instruction__element">
+                            <span>002</span>
+                            <p>
+                                iTsuba will collect all data
+                                about your movements
+                            </p>
+                        </li>
+                        <li class="instruction__element">
+                            <span>003</span>
+                            <p>
+                                Connect iTsuba
+                                to your smartphone
+                            </p>
+                        </li>
+                        <li class="instruction__element">
+                            <span>004</span>
+                            <p>
+                                A machine-learning algorithm will analyze
+                                all data and show you statistics
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-12 instruction__slider">
+                    <div>
+                        <img src="img/slide_img.png" alt="photo">
+                    </div>
+                    <div>
+                        <img src="img/slide_img.png" alt="photo">
+                    </div>
+                    <div>
+                        <img src="img/slide_img.png" alt="photo">
+                    </div>
+                    <div>
+                        <img src="img/slide_img.png" alt="photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Instruction -->
+    <!-- Works -->
+    <section class="works">
+        <div class="container works__container">
+            <div class="row ">
+                <div class="col-lg-6 col-md-12 works__box">
+                    <div class="works__description">
+                        <h4 class="works__title"><span>For</span> kendokas</h4>
+                        <ul class="works__list">
+                            <li class="works__item">
+                                <p>track your kendo</p>
+                            </li>
+                            <li class="works__item">
+                                <p>improve your results</p>
+                            </li>
+                            <li class="works__item">
+                                <p>compare your results with your friends</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="works__img">
+                        <img src="img/works-1.jpg" alt="photo">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 works__box">
+                    <div class="works__description">
+                        <h4 class="works__title"><span>For</span> dojo leaders </h4>
+                        <ul class="works__list">
+                            <li class="works__item">
+                                <p>Define weaknesses</p>
+                            </li>
+                            <li class="works__item">
+                                <p>Control dynamics</p>
+                            </li>
+                            <li class="works__item">
+                                <p>Track results of all dojo members</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="works__img">
+                        <img src="img/works-2.jpg" alt="photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Works -->
+    <!-- Scripts -->
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- JS -->
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
