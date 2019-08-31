@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello/fontello.eot?14637372');
+  src: url('../fonts/fontello/fontello.eot?14637372#iefix') format('embedded-opentype'),
+       url('../fonts/fontello/fontello.woff2?14637372') format('woff2'),
+       url('../fonts/fontello/fontello.woff?14637372') format('woff'),
+       url('../fonts/fontello/fontello.ttf?14637372') format('truetype'),
+       url('../fonts/fontello/fontello.svg?14637372#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+
+}
+ 
+.icon-right-open-big:before { content: '\e800'; } /* '' */
+.icon-left-open-big:before { content: '\e801'; } /* '' */
+.icon-cancel:before { content: '\e802'; } /* '' */
+.icon-phone-call:before { content: '\e803'; } /* '' */
+.icon-up-open-big:before { content: '\e804'; } /* '' */
