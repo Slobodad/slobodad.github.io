@@ -27,6 +27,10 @@ body {
 	font-weight: 700;
 }
 
+.body-active {
+	overflow: hidden;
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-weight: 700;
 }
@@ -37,14 +41,6 @@ ul {
 
 img {
 	max-width: 100%;
-}
-
-:hover {
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
 }
 
 .container {
@@ -309,13 +305,13 @@ img {
 	transition: all 0.3s ease;
 }
 
-.list-group-item.active {
+.header__nav a.active {
 	color: #ef531f;
 	background: transparent;
 	border-color: transparent;
 }
 
-.list-group-item.active:after {
+.header__nav a.active:after {
 	width: 100%;
 	height: 2px;
 	display: inline-block;
@@ -365,21 +361,11 @@ img {
 
 .header__phone a:hover {
 	text-decoration: underline;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
 	color: #3a4149;
 }
 
 .header__phone i:hover {
-	opacity: 0.8;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
+	cursor: pointer;
 }
 /*End header*/
 /*Banner*/
@@ -530,20 +516,10 @@ img {
 
 .services__element:hover:after {
 	opacity: 0.6;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
 }
 
 .services__element:hover .services__content{
 	opacity: 1;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
 }
 
 .services__element:nth-child(even) {
@@ -908,11 +884,6 @@ img {
 	visibility: hidden;
 	opacity: 0;
 	overflow-y: auto;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
 	background: rgba(0, 0, 0, 0.8);
 }
 
@@ -920,11 +891,6 @@ img {
 	z-index: 100;
 	visibility: visible;
 	opacity: 1;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
 }
 
 .popup__container {
@@ -932,7 +898,29 @@ img {
 	padding: 130px 145px 180px;
 	width: 800px;
 	position: relative;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: translate(0, -100%);
+	-moz-transform: translate(0, -100%);
+	-ms-transform: translate(0, -100%);
+	-o-transform: translate(0, -100%);
+	transform: translate(0, -100%);
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 	background: #ef531f;
+}
+
+.popup__wrapper--active .popup__container {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	transform: translate(0, 0);
 }
 
 .popup__title {
